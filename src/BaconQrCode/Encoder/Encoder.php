@@ -624,14 +624,10 @@ class Encoder
      */
     protected static function append8BitBytes($content, BitArray $bits, $encoding)
     {
-        if (false === ($bytes = @iconv('utf-8', $encoding, $content))) {
-            throw new Exception\WriterException('Could not encode content to ' . $encoding);
-        }
-
-        $length = strlen($bytes);
+        $length = strlen($content);
 
         for ($i = 0; $i < $length; $i++) {
-            $bits->appendBits(ord($bytes[$i]), 8);
+            $bits->appendBits(ord($content[$i]), 8);
         }
     }
 

@@ -1,8 +1,8 @@
 {
-    "name": "bacon/bacon-qr-code",
+    "name": "arcadesso/BaconQrCode",
     "description": "BaconQrCode is a QR code generator for PHP.",
     "license" : "BSD-2-Clause",
-    "homepage": "https://github.com/Bacon/BaconQrCode",
+    "homepage": "https://github.com/arcadesso/BaconQrCode",
     "require": {
         "php": ">=5.3.3",
         "ext-iconv": "*"
